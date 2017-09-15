@@ -4,7 +4,9 @@ import { Food} from './food.model'
 @Component({
   selector: 'food',
   template: `
-  <new-food></new-food>
+  <new-food>
+  (newMealSender)="addMeal($event)"
+  </new-food>
   `
 })
 
