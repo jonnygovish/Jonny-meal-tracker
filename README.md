@@ -1,6 +1,6 @@
 # Jonny Meal Tracker
 
-#### 
+#### A tracking application for allowing the user to track their meals
 
 #### By **John Mutavi**
 
