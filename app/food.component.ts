@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Food} from './food.model'
 
 @Component({
   selector: 'food',
@@ -8,8 +9,5 @@ import { Component } from '@angular/core';
 })
 
 export class FoodComponent {
-  
-}
-export class Food{
-  constructor(public name: string, public details: string, public calories: number) { }
+  public food: Food[] =[];
 }
