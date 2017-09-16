@@ -5,26 +5,28 @@ import{ Food } from './food.model';
 	selector: "new-food",
 	template: `
 	<div class="container">
+	<div class="jumbotron">
   <h1>Meal Tracker</h1>
+  </div>
   <form class="form-inline">
-  <div class="jumbotron">
+  <div class="form-group">
       <label>Enter A Meal</label>
       <input #newMeal>
   </div>
-  <div>
+  <div class="form-group">
       <label>Enter Detail</label>
       <input #newDetail>
   </div>
-  <div>
+  <div class="form-group">
       <label>Enter Calories</label>
       <input #newCalories>
+  </div>
       <button class="btn btn-info"(click)="
-      addMeal(newMeal.value, newDetail.value, newCalories);
+      addMeal(newMeal.value, newDetail.value, newCalories.value);
       newMeal.value='';
       newDetail.value='';
       newCalories.value='';
     ">Add</button>
-  </div>
     </form>
   
   </div>
