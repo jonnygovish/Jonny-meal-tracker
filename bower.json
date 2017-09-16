@@ -1,0 +1,22 @@
+{
+  "name": "Jonny-meal-tracker",
+  "description": "",
+  "main": "",
+  "authors": [
+    "John <jonnygovish@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jonnygovish/Jonny-meal-tracker",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "moment": "^2.18.1",
+    "jquery": "^3.2.1"
+  }
+}
