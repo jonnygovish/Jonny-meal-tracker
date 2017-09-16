@@ -22,7 +22,7 @@ import{ Food } from './food.model';
       addMeal(newMeal.value, newDetail.value, newCalories);
       newMeal.value='';
       newDetail.value='';
-      newMeal.value='';
+      newCalories.value='';
     ">Add</button>
   </div>
     </form>
@@ -35,7 +35,7 @@ import{ Food } from './food.model';
 export class NewFoodComponent{
 	@Output() newMealSender = new EventEmitter();
 	addMeal(name: string, details: string, calories: number){
-		var newMealToAdd: Food = new Food(name, calories, details);
+		var newMealToAdd: Food = new Food(name, details, calories);
 		this.newMealSender.emit(newMealToAdd);
 	}
 
