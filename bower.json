@@ -1,7 +1,7 @@
 {
-  "name": "Jonny-meal-tracker",
+  "name": "jonny-meal-tracker",
   "description": "",
-  "main": "",
+  "main": "index.html",
   "authors": [
     "John <jonnygovish@gmail.com>"
   ],
@@ -16,7 +16,6 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "moment": "^2.18.1",
-    "jquery": "^3.2.1"
+    "moment": "^2.18.1"
   }
 }

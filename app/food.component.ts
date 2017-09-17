@@ -9,7 +9,12 @@ import { Food} from './food.model'
   ></new-food>
   <meal-list
   [childMealList]="food"
+  (clickSender)= "showDetails($event)"
   ></meal-list>
+  <edit-meal
+	[childSelectedMeal]="selectedMeal"
+	(doneClickedSender)="finishedEditing()"
+  ></edit-meal>
   `
 })
 
@@ -23,5 +28,12 @@ export class FoodComponent {
   ];
   addMeal(newMealFromChild: Food){
   	this.food.push(newMealFromChild);
+  }
+  selectedMeal: Food = null;
+  showDetails(clickedMeal: Food){
+  	this.selectedMeal = clickedMeal;
+  }
+  finishedEditing() {
+  	this.selectedMeal = null;
   }
 }

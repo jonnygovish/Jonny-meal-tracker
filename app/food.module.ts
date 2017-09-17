@@ -1,10 +1,10 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 import { FoodComponent }   from './food.component';
 import { NewFoodComponent} from './new-food.component'
-import { FormsModule }   from '@angular/forms';
-import { Food } from './food.model';
 import { MealListComponent} from './meal-list.component';
+import { EditMealComponent} from './edit-meal.component';
 
 @NgModule({
   imports: [
@@ -15,6 +15,8 @@ import { MealListComponent} from './meal-list.component';
     FoodComponent,
     NewFoodComponent,
     MealListComponent,
+    EditMealComponent,
+
     
   ],
   bootstrap:    [ FoodComponent ]

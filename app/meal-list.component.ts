@@ -9,11 +9,16 @@ import { Food } from './food.model';
       <h3>{{ currentMeal.name }}</h3>
       <p>Meal details:{{ currentMeal.details }}</p>
       <p>Number of calories:{{ currentMeal.calories }}</p>
+      <button (click)="editButtonHasBeenClicked(currentMeal)">Change Your Meal</button>
       </div>
       </div>
 	`
 })
 export class MealListComponent {
 	@Input() childMealList: Food[];
+	@Output() clickSender = new EventEmitter();
+	editButtonHasBeenClicked(listToEdit: Food){
+		this.clickSender.emit(listToEdit);
+	}
 
 }
