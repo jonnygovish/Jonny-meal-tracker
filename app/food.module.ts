@@ -5,6 +5,8 @@ import { FoodComponent }   from './food.component';
 import { NewFoodComponent} from './new-food.component'
 import { MealListComponent} from './meal-list.component';
 import { EditMealComponent} from './edit-meal.component';
+import { CaloriesPipe } from './calories.pipe';
+
 
 @NgModule({
   imports: [
@@ -16,6 +18,7 @@ import { EditMealComponent} from './edit-meal.component';
     NewFoodComponent,
     MealListComponent,
     EditMealComponent,
+    CaloriesPipe,
 
     
   ],
