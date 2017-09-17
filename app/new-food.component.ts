@@ -4,22 +4,21 @@ import{ Food } from './food.model';
 @Component({
 	selector: "new-food",
 	template: `
-	<div class="container">
-		<div class="jumbotron">
-  			<h1>Meal Tracker</h1>
-  		</div>
+  		<div>
+        <h1>Meal Tracker</h1>
+      </div>
   		<form class="form-inline">
   			<div class="form-group">
-      			<label>Enter A Meal</label>
-      			<input #newMeal>
+      			<label id="new-food">Enter A Meal</label>
+      			<input #newMeal class="input-lg">
   			</div>
   			<div class="form-group">
-      			<label>Enter Detail</label>
-      			<input #newDetail>
+      			<label id="new-food">Enter Detail</label>
+      			<input #newDetail class="input-lg">
   			</div>
   			<div class="form-group">
-      			<label>Enter Calories</label>
-      			<input #newCalories>
+      			<label id="new-food">Enter Calories</label>
+      			<input #newCalories class="input-lg">
   			</div>
       		<button class="btn btn-info"(click)="
       		addMeal(newMeal.value, newDetail.value, newCalories.value);
@@ -29,7 +28,7 @@ import{ Food } from './food.model';
     		">Add</button>
     	</form>
   
-  </div>
+ 
 
 	
 	`

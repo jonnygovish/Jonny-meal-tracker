@@ -1,20 +1,63 @@
 
+body{
+  background-image: url('/resources/images/food.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  margin: 100px;
+  padding-top: 50px;
+  opacity: 0.5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+}
 h1 {
   color: blue;
+  text-align: center;
+  font-size: 7em;
+}
+.sortby-title{
+  color: white;
+}
+#new-food{
+  color: white;
 }
 
-.pie {
-  border: 1px solid blue;
-  border-radius: 8px;
-  padding: 10px;
-  width: 25%;
-  background-color: LightGreen;
+
+/*edit meals*/
+
+.edit {
+  margin-bottom: 10px;
 }
 
-.album {
-  border: 1px solid blue;
-  border-radius: 8px;
-  padding: 10px;
-  width: 25%;
-  background-color: LightBlue;
+.edit-field {
+float: right;
+}
+
+.panel > .panel-heading {
+  color: #F7F9F9;
+  background-color: #124559;
+}
+
+.panel > .panel-body {
+  color: #124559;
+  background-color: #F7F9F9;
+}
+
+.panel > .panel-footer {
+  color: #124559;
+  background-color: #F7F9F9;
+  border-color: #F7F9F9;
+}
+.panel-default {
+  border-color: #D9CAB3;
+}
+
+.panel p {
+  font-size: 1.2em;
+}
+
+.panel h3 {
+  font-size: 1.5em;
 }
